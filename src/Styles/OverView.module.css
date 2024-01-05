@@ -1,5 +1,6 @@
 .overView {
   padding: 1rem;
+
   >h3{
     padding-bottom: 1rem;
   }
@@ -7,11 +8,48 @@
     > ul {
       display: flex;
       list-style: none;
+      justify-content: space-between;
+      flex-wrap: wrap;
       > li {
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+        padding: 1rem;
+        flex: 1;
         > div {
           display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          span{
+            color: #0f0;
+          }
+          svg{
+            padding: 1rem;
+          }
         }
+        >p{
+          margin-bottom: 1rem;
+        }
+      }
+      >li:first-child{
+        border-radius: 0.5rem 0 0 0.5rem;
+      }
+      >li:last-child{
+        border-radius: 0 0.5rem 0.5rem 0;
       }
     }
   }
+}
+
+
+@media screen and (width<550px) {
+
+  .overView{
+    >section{
+      >ul{
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  }
+
 }

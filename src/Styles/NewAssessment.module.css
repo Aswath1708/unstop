@@ -1,6 +1,35 @@
 .newAssessment{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    >div:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+    >div:nth-child(2){
+        section{
+
+            display: flex;
+            gap: 0.5rem;
+    
+        }
+    }
     >div:last-child{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        button{
+            padding: 0.5rem;
+            border-radius: 5rem;
+        }
+        button:last-child{
+            color: #fff;
+            background-color: #00004d;
+            border-radius: 50%;
+        }
+
     }
 }
