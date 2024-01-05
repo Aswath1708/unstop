@@ -1,0 +1,17 @@
+.overView {
+  padding: 1rem;
+  >h3{
+    padding-bottom: 1rem;
+  }
+  > section {
+    > ul {
+      display: flex;
+      list-style: none;
+      > li {
+        > div {
+          display: flex;
+        }
+      }
+    }
+  }
+}

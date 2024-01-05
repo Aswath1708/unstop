@@ -1,0 +1,16 @@
+.mainSection{
+    background-color: #fff;
+    flex: 1;
+    >header{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 0.5rem 0;
+        >h3,p{
+            padding: 1rem 1.5rem;
+        }
+        >h3{
+            border-right: 1px solid #ddd;
+        }
+    }
+}
